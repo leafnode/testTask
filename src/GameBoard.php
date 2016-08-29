@@ -55,8 +55,8 @@ class GameBoard
     {
         $this->board = array();
         $input = $filler->generate($this->width, $this->height);
-        for($x = 0, $width = count($input); $x < $width; $x++ ) {
-            for($y = 0, $height = count($input[0]); $y < $height; $y++ ) {
+        for($x = 0; $x < $this->width; $x++ ) {
+            for($y = 0; $y < $this->height; $y++ ) {
                 $this->board[$x][$y] = new GameToken($input[$x][$y]);
             }
         }
