@@ -55,12 +55,12 @@ class GameManager
     /**
      * Check if game time has exceeded
      *
-     * @throws GameRulesException
+     * @throws GameException
      */
     private function validateRunTime()
     {
         if (time() - $this->startTime > 60) {
-            throw new GameException("Time limit exceeded", 10);
+            throw new GameRulesException("Time limit exceeded", 10);
         }
     }
 

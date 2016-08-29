@@ -36,7 +36,7 @@ class GameBoard
      * @param $x
      * @param $y
      * @return GameToken
-     * @throws \Exception
+     * @throws GameException
      */
     public function get($x, $y)
     {
